@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UIPickerView *picker;
+@property (strong, nonatomic) IBOutlet UILabel *pickerValue;
+
 
 @end
